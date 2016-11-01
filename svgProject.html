@@ -1,11 +1,53 @@
-<link rel="stylesheet" type="text/css" href="svgProject.css">
-<link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
-<body>
-<h1>SVG</h1>
-<svg viewBox="0 0 800 600">
- <circle cx="350" cy="250" r="30" fill="cyan"/>
-    <line x1="35" y1="25" x2="95" y2="85" stroke="blue" stroke-width="3"/>
-    <rect x="200" y="100" width="50" height="70" fill="blue" fill-opacity="0.2"/>
-     <polygon points="350,50 600,150 420,150" fill="white"/>
- </svg>
-</body>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="svgProject.css">
+    <style>
+@import url('https://fonts.googleapis.com/css?family=Nova+Mono|Space+Mono');
+</style>
+  </head>
+  <body>
+    <h1>Space SVG</h1>
+    <p>This is a scene of space. A meteor is falling. The sun is shining. The stars are blinking.<br> A ship is being launched back down followed by a smaller ship next to it.</p>
+    <svg viewBox="0 0 800 600">
+     <circle cx="35" cy="25" r="15" fill="gray">
+        <animate attributeName="cx" from="35" to="350" dur="3s" repeatCount="indefinite" begin="click"/>
+                <animate attributeName="cy" from="25" to="250" dur="3s" repeatCount="indefinite" begin="click"/>
+              </circle>
+     <circle cx="550" cy="40" r="30" fill="yellow" fill-opacity="1">
+       <animate attributeName="fill-opacity" from="1" to="0.2" dur="3s" repeatCount = "indefinite"/>
+     </circle>
+        <line x1="500" y1="80" x2="590" y2="120" stroke="blue" stroke-width="3">
+          <animate attributeName="x1" from="500" to="400" dur="3s" begin="mouseover" repeatCount="indefinite"/>
+        </line>
+        <rect x="200" y="100" width="5" height="7" fill="white" fill-opacity="1">
+          <animate attributeName="fill-opacity" from="1" to="0.2" dur="3s" repeatCount = "indefinite"/>
+        </rect>
+        <rect x="168" y="59" width="5" height="7" fill="white" fill-opacity="1">
+          <animate attributeName="fill-opacity" from="1" to="0.2" dur="3s" repeatCount = "indefinite"/>
+        </rect>
+        <rect x="108" y="182" width="5" height="7" fill="white" fill-opacity="1">
+          <animate attributeName="fill-opacity" from="1" to="0.2" dur="3s" repeatCount = "indefinite"/>
+        </rect>
+        <rect x="208" y="200" width="5" height="7" fill="white" fill-opacity="1">
+          <animate attributeName="fill-opacity" from="1" to="0.2" dur="3s" repeatCount = "indefinite"/>
+        </rect>
+        <rect x="268" y="170" width="5" height="7" fill="white" fill-opacity="1">
+          <animate attributeName="fill-opacity" from="1" to="0.2" dur="3s" repeatCount = "indefinite"/>
+        </rect>
+        <rect x="568" y="192" width="5" height="7" fill="white" fill-opacity="1">
+          <animate attributeName="fill-opacity" from="1" to="0.2" dur="3s" repeatCount = "indefinite"/>
+        </rect>
+        <rect x="488" y="195" width="5" height="7" fill="white" fill-opacity="1">
+<animate attributeName="fill-opacity" from="1" to="0.2" dur="3s" repeatCount = "indefinite"/>
+</rect>
+         <polygon points="350,50 550,150 420,150" fill="darkgray">
+           <animate attributeName="points" from="350,50 550,150 420,150" to="300,70 500,170 370,170" dur="3s" repeatCount="indefinite" begin="click"/>
+         </polygon>
+         <polygon points="175,25 275,75 210,75" fill="darkgray">
+           <animate attributeName="points" from="175,25 275,75 210,75" to="125,45 225,95 160,95" dur="3s" repeatCount="indefinite" begin="click"/>
+         </polygon>
+     </svg>
+  </body>
+</html>

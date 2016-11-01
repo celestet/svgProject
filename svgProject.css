@@ -1,9 +1,14 @@
 body{
   /*background-color: #B5C9E0;*/
 background-color: black;
-  font-family: 'Permanent Marker', cursive;
+  font-family: 'Space Mono', monospace;
+
+}
+
+h1,p{
+  color: white;
 }
 
 h1{
-  color: white;
+  font-family: 'Nova Mono', monospace;
 }
