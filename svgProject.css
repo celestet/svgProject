@@ -1,5 +1,5 @@
 body{
-background-color: black;
+background-image: url(http://wallpapercave.com/wp/pEeUsp1.jpg);
   font-family: 'Space Mono', monospace;
 
 }
@@ -10,4 +10,5 @@ h1,p{
 
 h1{
   font-family: 'Nova Mono', monospace;
+color: royalblue;
 }
