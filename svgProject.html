@@ -9,19 +9,22 @@
   </head>
   <body>
     <h1>Space SVG</h1>
-    <p>This is a scene of space. A meteor is falling. There is the solar system far away.
-    <br>If you mouseover the line then click the big spacecraft, it will look like the line<br>
-     launches the spacecraft launched back down followed by a two smaller <br>
-     spacecrafts(which moves when you click on them) next to it.</p>
+    <p>This is a scene of space. The stars are twinkling. A meteor is falling.<br> There is the solar system far away.
+    If you mouseover the line then click <br>the big spacecraft, it will look like the line
+     launches the spacecraft <br>launched back down followed by a two smaller
+     spacecrafts(which moves <br>when you click on them) next to it.</p>
     <svg viewBox="0 0 800 600">
-     <circle cx="35" cy="25" r="15" fill="gray">
+     <circle cx="35" cy="25" r="15" fill="gray"  >
+       <animate attributeName="cx" from="35" to="350" dur="6s" repeatCount="indefinite" />
+                <animate attributeName="cy" from="25" to="250" dur="6s" repeatCount="indefinite"/>
+     </circle>
         <animate attributeName="cx" from="35" to="350" dur="6s" repeatCount="indefinite" />
                 <animate attributeName="cy" from="25" to="250" dur="6s" repeatCount="indefinite"/>
               </circle>
      <circle cx="550" cy="40" r="7" fill="orange" fill-opacity="1">
        <animate attributeName="fill-opacity" from="1" to="0.2" dur="3s" repeatCount = "indefinite" />
      </circle>
-     <circle cx="560" cy="40" r="3" fill="brown" fill-opacity="1">
+     <circle cx="560" cy="40" r="3" fill="brown" fill-opacity="1" >
        <animate attributeName="cx" from="560" to="570" dur="3s" repeatCount = "indefinite" />
      </circle>
      <circle cx="540" cy="40" r="3" fill="yellow" fill-opacity="1">
